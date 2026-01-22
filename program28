@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int emp_id;
+    char name[50];
+    float basic, da, hra, pf, gross, net;
+
+    // Input employee details
+    printf("Enter Employee ID: ");
+    scanf("%d", &emp_id);
+
+    printf("Enter Employee Name: ");
+    scanf("%s", name);
+
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic);
+
+    // Calculations
+    da = basic * 0.10;     // 10% DA
+    hra = basic * 0.20;    // 20% HRA
+    pf = basic * 0.12;     // 12% PF
+
+    gross = basic + da + hra;
+    net = gross - pf
